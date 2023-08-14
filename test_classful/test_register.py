@@ -1,5 +1,5 @@
 from flask import Flask, request
-from flask_classful import get_interesting_members, FlaskView
+from src.flask_classful import FlaskView
 from nose.tools import eq_, raises
 
 class BaseClass():

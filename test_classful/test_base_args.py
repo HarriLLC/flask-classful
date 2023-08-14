@@ -2,8 +2,8 @@ import json
 import marshmallow as ma
 
 from flask import Flask
-from flask_classful import FlaskView, route
-from marshmallow import Schema, fields
+from src.flask_classful import FlaskView, route
+from marshmallow import Schema
 from webargs.flaskparser import use_args
 from webargs import fields
 from nose.tools import eq_

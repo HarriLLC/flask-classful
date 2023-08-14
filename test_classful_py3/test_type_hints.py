@@ -1,6 +1,6 @@
 from uuid import UUID
 from flask import Flask
-from flask_classful import FlaskView, route
+from src.flask_classful import FlaskView, route
 from nose.tools import eq_
 
 

@@ -1,7 +1,5 @@
-import logging
-
 from flask import jsonify, request
-from flask_classful import FlaskView, route, method
+from src.flask_classful import FlaskView, route, method
 from functools import wraps
 
 VALUE1 = "value1"

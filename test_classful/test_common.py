@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_classful import unpack, get_true_argspec, method, route, DecoratorCompatibilityError
+from src.flask_classful import unpack, get_true_argspec
 from .view_classes import BasicView, IndexView
 from nose.tools import eq_, raises
 

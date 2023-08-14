@@ -1,7 +1,7 @@
 from flask import Flask, make_response, redirect, request
-from flask_classful import FlaskView
+from src.flask_classful import FlaskView
 import json
-from nose.tools import eq_, ok_
+from nose.tools import eq_
 
 
 def output_json(data, code, headers=None):

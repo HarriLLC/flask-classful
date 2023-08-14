@@ -28,8 +28,5 @@ dependencies = [
     "Flask>=2.3.2"
 ]
 
-[project.scripts]
-flask-classful = "flask_classful:main"
-
 [tool.setuptools.packages.find]
-include = ["flask_classful"]
+where = ["src"]
