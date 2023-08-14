@@ -3,28 +3,33 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = 'Flask-Classful'
-version = '0.16.0'
-description = 'Class based views for Flask'
-readme = 'README.rst'
+name = "Flask-Classful"
+version = "0.16.0"
+description = "Class based views for Flask"
+readme = "README.rst"
+license = { text = "BSD" }
 authors = [
-    { name = 'Freedom Dumlao', email = 'hq@teracy.com' },
-    { name = 'Teracy, Inc', email = 'hq@teracy.com' }
+    { name = "Freedom Dumlao & Teracy, Inc", email = "hq@teracy.com" }
 ]
-license = 'LICENSE'
-homepage = 'https://github.com/HarriLLC/flask-classful'
+urls = { "Homepage" = "https://github.com/teracyhq/flask-classful" }
 classifiers = [
-    'Development Status :: 4 - Beta',
-    'Environment :: Web Environment',
-    'Intended Audience :: Developers',
-    'License :: OSI Approved :: BSD License',
-    'Operating System :: OS Independent',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
-    'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-    'Topic :: Software Development :: Libraries :: Python Modules'
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 dependencies = [
-    'Flask>=2.3.2'
+    "Flask>=2.3.2"
 ]
+
+[project.scripts]
+flask-classful = "flask_classful:main"
+
+[tool.setuptools.packages.find]
+include = ["flask_classful"]
