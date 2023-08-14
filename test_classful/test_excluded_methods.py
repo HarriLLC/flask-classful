@@ -1,6 +1,6 @@
 from flask import Flask
 
-from flask_classful import FlaskView
+from src.flask_classful import FlaskView
 from nose.tools import eq_
 
 

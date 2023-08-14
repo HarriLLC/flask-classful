@@ -2,7 +2,7 @@ import sys
 from flask import Flask
 from .view_classes import InspectArgsView, NoInspectArgsView, InspectArgsFalseView
 from nose.tools import eq_, raises
-from flask_classful import DecoratorCompatibilityError
+from src.flask_classful import DecoratorCompatibilityError
 
 _py2 = sys.version_info[0] == 2
 
