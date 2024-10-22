@@ -11,6 +11,11 @@ IndexView.register(bp)
 JSONifyTestView.register(bp)
 app.register_blueprint(bp)
 
+# Register the 'foo' blueprint before creating the test client
+foo = Blueprint('foo', __name__)
+BasicView.register(foo, route_base="/")
+app.register_blueprint(foo, url_prefix='/foo')
+
 client = app.test_client()
 
 
@@ -98,10 +103,6 @@ def test_bp_custom_http_method():
 
 
 def test_bp_url_prefix():
-    foo = Blueprint('foo', __name__)
-    BasicView.register(foo, route_base="/")
-    app.register_blueprint(foo, url_prefix='/foo')
-
     resp = client.get('/foo/')
     eq_(b"Index", resp.data)
 
